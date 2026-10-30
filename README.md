@@ -1,2 +1,2 @@
-# personalwebsite
+# Personal_Website
 N/A
