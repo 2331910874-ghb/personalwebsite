@@ -1,0 +1,1050 @@
+/* CSS Reset & Base Setup */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0d0d0d;
+}
+
+body {
+  width: 100%;
+  background-color: #0d0d0d;
+  color: #B8B4AE;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Master Fixed Page Frame: Exactly 1440px * 900px */
+.page-container {
+  width: 1440px;
+  height: 900px;
+  position: relative;
+  background-color: #171717;
+  overflow: hidden;
+  margin: 0 auto;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-container.active {
+  display: block;
+  opacity: 1;
+}
+
+.card-clickable {
+  cursor: pointer;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.card-clickable:hover {
+  opacity: 0.9;
+}
+
+/* Common Header Elements Across Pages */
+.brand-title {
+  position: absolute;
+  left: 64px;
+  top: 28px;
+  width: 420px;
+  color: #B8B4AE;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  word-wrap: break-word;
+  user-select: none;
+  z-index: 10;
+}
+
+.nav-links {
+  position: absolute;
+  left: 800px;
+  top: 30px;
+  width: 580px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 32px;
+  color: #B8B4AE;
+  font-size: 13px;
+  font-weight: 500;
+  word-wrap: break-word;
+  z-index: 10;
+}
+
+.nav-link {
+  color: #B8B4AE;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  letter-spacing: 0.05em;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #FFFFFF;
+}
+
+/* Common Dividers */
+.top-divider {
+  position: absolute;
+  left: 64px;
+  top: 70px;
+  width: 1312px;
+  height: 1px;
+  z-index: 10;
+}
+
+.top-divider-red {
+  background-color: #E53935;
+}
+
+.top-divider-dark {
+  background-color: #393939;
+}
+
+.bottom-divider {
+  position: absolute;
+  left: 64px;
+  top: 850px;
+  width: 1312px;
+  height: 1px;
+  background-color: #393939;
+  z-index: 10;
+}
+
+/* Common Footer Elements */
+.copyright {
+  position: absolute;
+  left: 64px;
+  top: 865px;
+  width: 700px;
+  color: #B8B4AE;
+  font-size: 11px;
+  font-weight: 500;
+  word-wrap: break-word;
+  z-index: 10;
+}
+
+.contact-link {
+  position: absolute;
+  left: 1050px;
+  top: 865px;
+  width: 326px;
+  text-align: right;
+  color: #B8B4AE;
+  font-size: 11px;
+  font-weight: 700;
+  word-wrap: break-word;
+  text-decoration: none;
+  z-index: 10;
+  transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+  color: #FFFFFF;
+}
+
+.contact-link .arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.contact-link:hover .arrow {
+  transform: translate(2px, -2px);
+}
+
+/* ===================================================
+   PAGE 1: HERO / HOME (Figma exact coordinates)
+=================================================== */
+.page-home .hero-img-box {
+  position: absolute;
+  left: 603px;
+  top: 100px;
+  width: 745px;
+  height: 696px;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.page-home .hero-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  display: block;
+}
+
+.page-home .role-subheading {
+  position: absolute;
+  left: 64px;
+  top: 105px;
+  width: 760px;
+  color: rgba(184, 180, 174, 0.72);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-home .hero-title {
+  position: absolute;
+  left: 64px;
+  top: 136px;
+  width: 690px;
+  color: #E53935;
+  font-size: 96px;
+  font-family: 'Jim Nightshade', cursive;
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  word-wrap: break-word;
+  z-index: 2;
+  user-select: none;
+}
+
+.page-home .hero-intro {
+  position: absolute;
+  left: 68px;
+  top: 400px;
+  width: 520px;
+  color: #B8B4AE;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-home .statement-accent-bar {
+  position: absolute;
+  left: 68px;
+  top: 780px;
+  width: 80px;
+  height: 5px;
+  background-color: #E53935;
+  z-index: 2;
+}
+
+.page-home .statement-text {
+  position: absolute;
+  left: 68px;
+  top: 798px;
+  width: 780px;
+  color: #F4F1EC;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+/* ===================================================
+   PAGE 2: ABOUT SECTION (Figma exact coordinates)
+=================================================== */
+.page-about .about-img {
+  position: absolute;
+  left: 64px;
+  top: 123px;
+  width: 620px;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.page-about .about-tag {
+  position: absolute;
+  left: 742px;
+  top: 130px;
+  width: 500px;
+  color: #B8B4AE;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-about .about-title {
+  position: absolute;
+  left: 742px;
+  top: 160px;
+  width: 600px;
+  color: #E53935;
+  font-size: 55px;
+  font-family: 'Jim Nightshade', cursive;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  user-select: none;
+  z-index: 2;
+}
+
+.page-about .about-narrative {
+  position: absolute;
+  left: 742px;
+  top: 330px;
+  width: 580px;
+  color: #F4F1EC;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-about .about-mid-divider {
+  position: absolute;
+  left: 742px;
+  top: 550px;
+  width: 580px;
+  height: 1px;
+  background-color: #393939;
+  z-index: 2;
+}
+
+.page-about .pillar-courage {
+  position: absolute;
+  left: 742px;
+  top: 578px;
+  width: 250px;
+  color: #F4F1EC;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-about .pillar-persistence {
+  position: absolute;
+  left: 1000px;
+  top: 578px;
+  width: 270px;
+  color: #F4F1EC;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-about .pillar-curiosity {
+  position: absolute;
+  left: 742px;
+  top: 624px;
+  width: 250px;
+  color: #F4F1EC;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-about .pillar-observation {
+  position: absolute;
+  left: 1000px;
+  top: 624px;
+  width: 280px;
+  color: #F4F1EC;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-about .about-motto {
+  position: absolute;
+  left: 742px;
+  top: 715px;
+  width: 560px;
+  color: #F4F1EC;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+/* ===================================================
+   PAGE 3: SELECTED WORK (Figma exact coordinates)
+=================================================== */
+.page-work .work-tag {
+  position: absolute;
+  left: 64px;
+  top: 108px;
+  width: 500px;
+  color: #B8B4AE;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-work .work-title {
+  position: absolute;
+  left: 64px;
+  top: 128px;
+  width: 950px;
+  height: 142px;
+  color: #E53935;
+  font-size: 57px;
+  font-family: 'Jim Nightshade', cursive;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  word-wrap: break-word;
+  user-select: none;
+  z-index: 2;
+}
+
+.page-work .card1-img {
+  position: absolute;
+  left: 64px;
+  top: 290px;
+  width: 408px;
+  height: 360px;
+  border-radius: 8px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.page-work .card1-num {
+  position: absolute;
+  left: 64px;
+  top: 670px;
+  width: 50px;
+  color: #B8B4AE;
+  font-size: 12px;
+  font-weight: 700;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-work .card1-title {
+  position: absolute;
+  left: 64px;
+  top: 700px;
+  width: 400px;
+  color: #E53935;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-work .card1-desc {
+  position: absolute;
+  left: 64px;
+  top: 738px;
+  width: 390px;
+  color: #F4F1EC;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-work .card2-img {
+  position: absolute;
+  left: 502px;
+  top: 290px;
+  width: 408px;
+  height: 360px;
+  border-radius: 8px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.page-work .card2-num {
+  position: absolute;
+  left: 506px;
+  top: 670px;
+  width: 50px;
+  color: #B8B4AE;
+  font-size: 12px;
+  font-weight: 700;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-work .card2-title {
+  position: absolute;
+  left: 506px;
+  top: 700px;
+  width: 400px;
+  color: #E53935;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-work .card2-desc {
+  position: absolute;
+  left: 506px;
+  top: 738px;
+  width: 390px;
+  color: #F4F1EC;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-work .card3-img {
+  position: absolute;
+  left: 940px;
+  top: 290px;
+  width: 408px;
+  height: 360px;
+  border-radius: 8px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.page-work .card3-num {
+  position: absolute;
+  left: 948px;
+  top: 670px;
+  width: 50px;
+  color: #B8B4AE;
+  font-size: 12px;
+  font-weight: 700;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-work .card3-title {
+  position: absolute;
+  left: 948px;
+  top: 700px;
+  width: 400px;
+  color: #E53935;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-work .card3-desc {
+  position: absolute;
+  left: 948px;
+  top: 738px;
+  width: 390px;
+  color: #F4F1EC;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+/* ===================================================
+   PAGE 4: PROJECT 01 / FOOTBALL (Figma exact coordinates)
+=================================================== */
+.page-football .football-tag {
+  position: absolute;
+  left: 64px;
+  top: 111px;
+  width: 500px;
+  height: 18px;
+  color: #B8B4AE;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.20px;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-football .football-title {
+  position: absolute;
+  left: 64px;
+  top: 129px;
+  width: 760px;
+  height: 74px;
+  color: #E53935;
+  font-size: 70px;
+  font-family: 'Jim Nightshade', cursive;
+  font-weight: 400;
+  word-wrap: break-word;
+  user-select: none;
+  z-index: 2;
+}
+
+.page-football .football-subtitle {
+  position: absolute;
+  left: 66px;
+  top: 225px;
+  width: 760px;
+  height: 26px;
+  color: #F4F1EC;
+  font-size: 16px;
+  font-weight: 500;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-football .football-hero-img {
+  position: absolute;
+  left: 64px;
+  top: 265px;
+  width: 820px;
+  height: 430px;
+  border-radius: 8px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.page-football .football-keywords {
+  position: absolute;
+  left: 64px;
+  top: 713px;
+  width: 600px;
+  height: 18px;
+  color: #B8B4AE;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.80px;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-football .football-card-bg {
+  position: absolute;
+  left: 930px;
+  top: 270px;
+  width: 446px;
+  height: 485px;
+  background: #222222;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.page-football .football-card-stripe {
+  position: absolute;
+  left: 930px;
+  top: 270px;
+  width: 6px;
+  height: 485px;
+  background: #E53935;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  z-index: 2;
+}
+
+.page-football .football-card-role {
+  position: absolute;
+  left: 962px;
+  top: 296px;
+  width: 380px;
+  height: 18px;
+  color: #B8B4AE;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.80px;
+  word-wrap: break-word;
+  z-index: 3;
+}
+
+.page-football .football-section1-title {
+  position: absolute;
+  left: 962px;
+  top: 334px;
+  width: 360px;
+  height: 28px;
+  color: #E53935;
+  font-size: 21px;
+  font-weight: 700;
+  word-wrap: break-word;
+  z-index: 3;
+}
+
+.page-football .football-section1-desc {
+  position: absolute;
+  left: 962px;
+  top: 370px;
+  width: 370px;
+  height: 66px;
+  color: #F4F1EC;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  word-wrap: break-word;
+  z-index: 3;
+}
+
+.page-football .football-section2-title {
+  position: absolute;
+  left: 962px;
+  top: 461px;
+  width: 360px;
+  height: 28px;
+  color: #E53935;
+  font-size: 21px;
+  font-weight: 700;
+  word-wrap: break-word;
+  z-index: 3;
+}
+
+.page-football .football-section2-desc {
+  position: absolute;
+  left: 962px;
+  top: 497px;
+  width: 370px;
+  height: 72px;
+  color: #F4F1EC;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  word-wrap: break-word;
+  z-index: 3;
+}
+
+.page-football .football-section3-title {
+  position: absolute;
+  left: 962px;
+  top: 600px;
+  width: 360px;
+  height: 28px;
+  color: #E53935;
+  font-size: 21px;
+  font-weight: 700;
+  word-wrap: break-word;
+  z-index: 3;
+}
+
+.page-football .football-section3-desc {
+  position: absolute;
+  left: 962px;
+  top: 636px;
+  width: 370px;
+  height: 58px;
+  color: #F4F1EC;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  word-wrap: break-word;
+  z-index: 3;
+}
+
+/* ===================================================
+   PAGE 5: PROJECT 02 / MTB (Figma exact coordinates)
+=================================================== */
+.page-mtb .mtb-tag {
+  position: absolute;
+  left: 64px;
+  top: 123px;
+  width: 500px;
+  color: #B8B4AE;
+  font-size: 12px;
+  font-weight: 700;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-mtb .mtb-title {
+  position: absolute;
+  left: 64px;
+  top: 148px;
+  width: 736px;
+  height: 57px;
+  color: #E53935;
+  font-size: 70px;
+  font-family: 'Jim Nightshade', cursive;
+  font-weight: 400;
+  word-wrap: break-word;
+  user-select: none;
+  z-index: 2;
+}
+
+.page-mtb .mtb-subtitle {
+  position: absolute;
+  left: 64px;
+  top: 246px;
+  width: 700px;
+  color: #F4F1EC;
+  font-size: 16px;
+  font-weight: 500;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-mtb .mtb-hero-img {
+  position: absolute;
+  left: 64px;
+  top: 302px;
+  width: 820px;
+  height: 400px;
+  border-radius: 8px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.page-mtb .mtb-card-bg {
+  position: absolute;
+  left: 930px;
+  top: 288px;
+  width: 446px;
+  height: 562px;
+  background: #222222;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.page-mtb .mtb-card-role {
+  position: absolute;
+  left: 962px;
+  top: 318px;
+  width: 380px;
+  color: #B8B4AE;
+  font-size: 12px;
+  font-weight: 700;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-mtb .mtb-section1-title {
+  position: absolute;
+  left: 962px;
+  top: 363px;
+  width: 360px;
+  color: #E53935;
+  font-size: 20px;
+  font-weight: 700;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-mtb .mtb-section1-desc {
+  position: absolute;
+  left: 962px;
+  top: 399px;
+  width: 370px;
+  color: #F4F1EC;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-mtb .mtb-section2-title {
+  position: absolute;
+  left: 962px;
+  top: 493px;
+  width: 360px;
+  color: #E53935;
+  font-size: 20px;
+  font-weight: 700;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-mtb .mtb-section2-desc {
+  position: absolute;
+  left: 962px;
+  top: 529px;
+  width: 370px;
+  color: #F4F1EC;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-mtb .mtb-section3-title {
+  position: absolute;
+  left: 962px;
+  top: 648px;
+  width: 360px;
+  color: #E53935;
+  font-size: 20px;
+  font-weight: 700;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-mtb .mtb-section3-desc {
+  position: absolute;
+  left: 962px;
+  top: 684px;
+  width: 370px;
+  color: #F4F1EC;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-mtb .mtb-details-label {
+  position: absolute;
+  left: 64px;
+  top: 730px;
+  width: 300px;
+  color: #B8B4AE;
+  font-size: 12px;
+  font-weight: 700;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-mtb .mtb-detail-img1 {
+  position: absolute;
+  left: 64px;
+  top: 760px;
+  width: 250px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.page-mtb .mtb-detail-img2 {
+  position: absolute;
+  left: 330px;
+  top: 760px;
+  width: 250px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.page-mtb .mtb-detail-img3 {
+  position: absolute;
+  left: 596px;
+  top: 760px;
+  width: 250px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* ===================================================
+   PAGE 6: PROJECT 03 / PHOTOGRAPHY (Figma exact coordinates)
+=================================================== */
+.page-photography .photo-tag {
+  position: absolute;
+  left: 64px;
+  top: 105px;
+  width: 500px;
+  color: #B8B4AE;
+  font-size: 12px;
+  font-weight: 700;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-photography .photo-title {
+  position: absolute;
+  left: 64px;
+  top: 127px;
+  width: 760px;
+  height: 65px;
+  color: #E53935;
+  font-size: 70px;
+  font-family: 'Jim Nightshade', cursive;
+  font-weight: 400;
+  word-wrap: break-word;
+  user-select: none;
+  z-index: 2;
+}
+
+.page-photography .photo-subtitle {
+  position: absolute;
+  left: 64px;
+  top: 214px;
+  width: 900px;
+  color: #F4F1EC;
+  font-size: 16px;
+  font-weight: 500;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.page-photography .photo-img-large {
+  position: absolute;
+  left: 64px;
+  top: 275px;
+  width: 790px;
+  height: 500px;
+  border-radius: 8px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.page-photography .photo-img-top {
+  position: absolute;
+  left: 880px;
+  top: 275px;
+  width: 496px;
+  height: 240px;
+  border-radius: 8px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.page-photography .photo-img-bottom1 {
+  position: absolute;
+  left: 880px;
+  top: 535px;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.page-photography .photo-img-bottom2 {
+  position: absolute;
+  left: 1136px;
+  top: 536px;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.page-photography .photo-desc {
+  position: absolute;
+  left: 64px;
+  top: 790px;
+  width: 1100px;
+  color: #F4F1EC;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  word-wrap: break-word;
+  z-index: 2;
+}

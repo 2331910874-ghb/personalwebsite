@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DYLAN / PORTFOLIO</title>
+  
+  <!-- Google Fonts: Inter & Jim Nightshade -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Jim+Nightshade&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- PAGE 1: HERO / HOME SECTION (1440px * 900px) -->
+  <div class="page-container page-home active" id="home">
+    <div class="brand-title" onclick="switchPage('home')">D Y L A N &nbsp; / &nbsp; PORTFOLIO</div>
+    <nav class="nav-links">
+      <a href="#home" class="nav-link active" onclick="switchPage('home', event)">HOME</a>
+      <a href="#about" class="nav-link" onclick="switchPage('about', event)">ABOUT</a>
+      <a href="#work" class="nav-link" onclick="switchPage('work', event)">WORK</a>
+      <a href="#football" class="nav-link" onclick="switchPage('football', event)">FOOTBALL</a>
+      <a href="#mtb" class="nav-link" onclick="switchPage('mtb', event)">MTB</a>
+      <a href="#photography" class="nav-link" onclick="switchPage('photography', event)">PHOTOGRAPHY</a>
+    </nav>
+    <div class="top-divider top-divider-red"></div>
+
+    <div class="hero-img-box">
+      <img 
+        style="width: 100%; height: 100%; border-radius: 8px" 
+        src="assets/hero-mtb-transparent.png" 
+        alt="Dylan riding mountain bike" 
+      />
+    </div>
+
+    <div class="role-subheading">ATHLETE &nbsp;/&nbsp; OUTDOOR EXPLORER &nbsp;/&nbsp; PHOTOGRAPHER</div>
+    
+    <h1 class="hero-title">
+      MADE TO MOVE.<br>
+      BUILT TO NOTICE.
+    </h1>
+
+    <p class="hero-intro">
+      I’m Dylan — I play football, ride mountain bikes, and take photos of the places and moments I don’t want to forget.
+    </p>
+
+    <div class="statement-accent-bar"></div>
+    <p class="statement-text">
+      A portfolio about facing challenges, staying curious, and recording the journey.
+    </p>
+
+    <div class="bottom-divider"></div>
+
+    <div class="copyright">
+      © 2025 DYLAN &nbsp;/&nbsp; SPORT · OUTDOORS · PHOTOGRAPHY
+    </div>
+    <a href="#contact" class="contact-link">
+      CONTACT &nbsp;/&nbsp; GET IN TOUCH <span class="arrow">↗</span>
+    </a>
+  </div>
+
+  <!-- PAGE 2: ABOUT SECTION (1440px * 900px) -->
+  <div class="page-container page-about" id="about">
+    <div class="brand-title" onclick="switchPage('home')">D Y L A N &nbsp; / &nbsp; PORTFOLIO</div>
+    <nav class="nav-links">
+      <a href="#home" class="nav-link" onclick="switchPage('home', event)">HOME</a>
+      <a href="#about" class="nav-link active" onclick="switchPage('about', event)">ABOUT</a>
+      <a href="#work" class="nav-link" onclick="switchPage('work', event)">WORK</a>
+      <a href="#football" class="nav-link" onclick="switchPage('football', event)">FOOTBALL</a>
+      <a href="#mtb" class="nav-link" onclick="switchPage('mtb', event)">MTB</a>
+      <a href="#photography" class="nav-link" onclick="switchPage('photography', event)">PHOTOGRAPHY</a>
+    </nav>
+    <div class="top-divider top-divider-dark"></div>
+
+    <img 
+      src="assets/about-dylan.png" 
+      alt="Dylan assembling model plane" 
+      class="about-img"
+    />
+
+    <div class="about-tag">A LITTLE ABOUT ME</div>
+
+    <h2 class="about-title">
+      SPORT, OUTDOORS,<br>
+      AND THE DETAILS.
+    </h2>
+
+    <div class="about-narrative">
+      I’m someone who loves sport, games, and exploring new places. Football has taught me to trust a team and keep going under pressure. Mountain biking pushes me to read the terrain, make decisions, and learn from every ride. When I travel, photography helps me slow down and notice light, colour, and small details.<br><br>I want this portfolio to show more than results. It’s about how I meet challenges, reflect on mistakes, and keep doing the things I care about.
+    </div>
+
+    <div class="about-mid-divider"></div>
+
+    <div class="pillar-courage">01 &nbsp;/&nbsp; COURAGE</div>
+    <div class="pillar-persistence">02 &nbsp;/&nbsp; PERSISTENCE</div>
+    <div class="pillar-curiosity">03 &nbsp;/&nbsp; CURIOSITY</div>
+    <div class="pillar-observation">04 &nbsp;/&nbsp; OBSERVATION</div>
+
+    <div class="about-motto">
+      Different interests. One habit: keep learning.
+    </div>
+
+    <div class="bottom-divider"></div>
+
+    <div class="copyright">
+      © 2025 DYLAN &nbsp;/&nbsp; SPORT · OUTDOORS · PHOTOGRAPHY
+    </div>
+    <a href="#contact" class="contact-link">
+      CONTACT &nbsp;/&nbsp; GET IN TOUCH <span class="arrow">↗</span>
+    </a>
+  </div>
+
+  <!-- PAGE 3: SELECTED WORK SECTION (1440px * 900px) -->
+  <div class="page-container page-work" id="work">
+    <div class="brand-title" onclick="switchPage('home')">D Y L A N &nbsp; / &nbsp; PORTFOLIO</div>
+    <nav class="nav-links">
+      <a href="#home" class="nav-link" onclick="switchPage('home', event)">HOME</a>
+      <a href="#about" class="nav-link" onclick="switchPage('about', event)">ABOUT</a>
+      <a href="#work" class="nav-link active" onclick="switchPage('work', event)">WORK</a>
+      <a href="#football" class="nav-link" onclick="switchPage('football', event)">FOOTBALL</a>
+      <a href="#mtb" class="nav-link" onclick="switchPage('mtb', event)">MTB</a>
+      <a href="#photography" class="nav-link" onclick="switchPage('photography', event)">PHOTOGRAPHY</a>
+    </nav>
+    <div class="top-divider top-divider-dark"></div>
+
+    <div class="work-tag">SELECTED WORK / 2025</div>
+    <h2 class="work-title">THREE WAYS TO<br>EXPERIENCE THE WORLD.</h2>
+
+    <!-- Card 1: Football (Clickable to jump to Football page) -->
+    <img src="assets/card-football.png" alt="Football" class="card1-img card-clickable" onclick="switchPage('football')" />
+    <div class="card1-num card-clickable" onclick="switchPage('football')">01</div>
+    <div class="card1-title card-clickable" onclick="switchPage('football')">FOOTBALL</div>
+    <div class="card1-desc card-clickable" onclick="switchPage('football')">Teamwork, pressure, and learning to keep moving.</div>
+
+    <!-- Card 2: Mountain Biking (Clickable to jump to MTB page) -->
+    <img src="assets/card-mtb.png" alt="Mountain Biking" class="card2-img card-clickable" onclick="switchPage('mtb')" />
+    <div class="card2-num card-clickable" onclick="switchPage('mtb')">02</div>
+    <div class="card2-title card-clickable" onclick="switchPage('mtb')">MOUNTAIN BIKING</div>
+    <div class="card2-desc card-clickable" onclick="switchPage('mtb')">Reading terrain, solving problems, and progressing.</div>
+
+    <!-- Card 3: Photography (Clickable to jump to Photography page) -->
+    <img src="assets/card-photography.png" alt="Photography" class="card3-img card-clickable" onclick="switchPage('photography')" />
+    <div class="card3-num card-clickable" onclick="switchPage('photography')">03</div>
+    <div class="card3-title card-clickable" onclick="switchPage('photography')">PHOTOGRAPHY</div>
+    <div class="card3-desc card-clickable" onclick="switchPage('photography')">Noticing light, colour, and moments worth keeping.</div>
+
+    <div class="bottom-divider"></div>
+
+    <div class="copyright">
+      © 2025 DYLAN &nbsp;/&nbsp; SPORT · OUTDOORS · PHOTOGRAPHY
+    </div>
+    <a href="#contact" class="contact-link">
+      CONTACT &nbsp;/&nbsp; GET IN TOUCH <span class="arrow">↗</span>
+    </a>
+  </div>
+
+  <!-- PAGE 4: PROJECT 01 / FOOTBALL (1440px * 900px) -->
+  <div class="page-container page-football" id="football">
+    <div class="brand-title" onclick="switchPage('home')">D Y L A N &nbsp; / &nbsp; PORTFOLIO</div>
+    <nav class="nav-links">
+      <a href="#home" class="nav-link" onclick="switchPage('home', event)">HOME</a>
+      <a href="#about" class="nav-link" onclick="switchPage('about', event)">ABOUT</a>
+      <a href="#work" class="nav-link" onclick="switchPage('work', event)">WORK</a>
+      <a href="#football" class="nav-link active" onclick="switchPage('football', event)">FOOTBALL</a>
+      <a href="#mtb" class="nav-link" onclick="switchPage('mtb', event)">MTB</a>
+      <a href="#photography" class="nav-link" onclick="switchPage('photography', event)">PHOTOGRAPHY</a>
+    </nav>
+    <div class="top-divider top-divider-dark"></div>
+
+    <div class="football-tag">PROJECT 01 / 2025</div>
+    <h2 class="football-title">FOOTBALL</h2>
+    <div class="football-subtitle">THE GAME. THE TEAM. THE GROWTH.</div>
+
+    <img 
+      src="assets/football-hero.png" 
+      alt="Football match and training" 
+      class="football-hero-img" 
+    />
+    <div class="football-keywords">TRAINING / MATCHES / TEAMWORK</div>
+
+    <div class="football-card-bg"></div>
+    <div class="football-card-stripe"></div>
+    <div class="football-card-role">ROLE / TEAM MEMBER</div>
+
+    <div class="football-section1-title">WHY FOOTBALL?</div>
+    <div class="football-section1-desc">Football is not something I do alone. It is about teamwork, trust, and trying again after things don’t go to plan.</div>
+
+    <div class="football-section2-title">WHAT I DID</div>
+    <div class="football-section2-desc">In 2025, I took part in football training and games, working on fitness, tactics, contact, and coordination with teammates.</div>
+
+    <div class="football-section3-title">WHAT I LEARNED</div>
+    <div class="football-section3-desc">Strength also means staying focused and moving forward under pressure.</div>
+
+    <div class="bottom-divider"></div>
+
+    <div class="copyright">
+      © 2025 DYLAN &nbsp;/&nbsp; SPORT · OUTDOORS · PHOTOGRAPHY
+    </div>
+    <a href="#contact" class="contact-link">
+      CONTACT &nbsp;/&nbsp; GET IN TOUCH <span class="arrow">↗</span>
+    </a>
+  </div>
+
+  <!-- PAGE 5: PROJECT 02 / MTB (1440px * 900px) -->
+  <div class="page-container page-mtb" id="mtb">
+    <div class="brand-title" onclick="switchPage('home')">D Y L A N &nbsp; / &nbsp; PORTFOLIO</div>
+    <nav class="nav-links">
+      <a href="#home" class="nav-link" onclick="switchPage('home', event)">HOME</a>
+      <a href="#about" class="nav-link" onclick="switchPage('about', event)">ABOUT</a>
+      <a href="#work" class="nav-link" onclick="switchPage('work', event)">WORK</a>
+      <a href="#football" class="nav-link" onclick="switchPage('football', event)">FOOTBALL</a>
+      <a href="#mtb" class="nav-link active" onclick="switchPage('mtb', event)">MTB</a>
+      <a href="#photography" class="nav-link" onclick="switchPage('photography', event)">PHOTOGRAPHY</a>
+    </nav>
+    <div class="top-divider top-divider-dark"></div>
+
+    <div class="mtb-tag">PROJECT 02 / 2025</div>
+    <h2 class="mtb-title">RIDE INTO THE UNKNOWN.</h2>
+    <div class="mtb-subtitle">RIDE FURTHER. LEARN FROM EVERY LINE.</div>
+
+    <img 
+      src="assets/mtb-hero.png" 
+      alt="Mountain Biking Trail" 
+      class="mtb-hero-img" 
+    />
+
+    <div class="mtb-card-bg"></div>
+    <div class="mtb-card-role">ROLE / MOUNTAIN BIKER</div>
+
+    <div class="mtb-section1-title">WHY MTB?</div>
+    <div class="mtb-section1-desc">Mountain biking connects my love of the outdoors and speed with the challenge of making decisions in uncertain terrain.</div>
+
+    <div class="mtb-section2-title">THE PROCESS</div>
+    <div class="mtb-section2-desc">Each route asks for different control, focus, and energy. I reflect on what went wrong and try not to repeat the same mistake on the next ride.</div>
+
+    <div class="mtb-section3-title">WHAT I’M BUILDING</div>
+    <div class="mtb-section3-desc">Better judgement, confidence, and persistence — one trail at a time.</div>
+
+    <div class="mtb-details-label">BIKE DETAILS</div>
+    <img src="assets/mtb-detail1.png" alt="Bike detail 1" class="mtb-detail-img1" />
+    <img src="assets/mtb-detail2.png" alt="Bike detail 2" class="mtb-detail-img2" />
+    <img src="assets/mtb-detail3.png" alt="Bike detail 3" class="mtb-detail-img3" />
+
+    <div class="bottom-divider"></div>
+
+    <div class="copyright">
+      © 2025 DYLAN &nbsp;/&nbsp; SPORT · OUTDOORS · PHOTOGRAPHY
+    </div>
+    <a href="#contact" class="contact-link">
+      CONTACT &nbsp;/&nbsp; GET IN TOUCH <span class="arrow">↗</span>
+    </a>
+  </div>
+
+  <!-- PAGE 6: PROJECT 03 / PHOTOGRAPHY (1440px * 900px) -->
+  <div class="page-container page-photography" id="photography">
+    <div class="brand-title" onclick="switchPage('home')">D Y L A N &nbsp; / &nbsp; PORTFOLIO</div>
+    <nav class="nav-links">
+      <a href="#home" class="nav-link" onclick="switchPage('home', event)">HOME</a>
+      <a href="#about" class="nav-link" onclick="switchPage('about', event)">ABOUT</a>
+      <a href="#work" class="nav-link" onclick="switchPage('work', event)">WORK</a>
+      <a href="#football" class="nav-link" onclick="switchPage('football', event)">FOOTBALL</a>
+      <a href="#mtb" class="nav-link" onclick="switchPage('mtb', event)">MTB</a>
+      <a href="#photography" class="nav-link active" onclick="switchPage('photography', event)">PHOTOGRAPHY</a>
+    </nav>
+    <div class="top-divider top-divider-dark"></div>
+
+    <div class="photo-tag">PROJECT 03 / 2025</div>
+    <h2 class="photo-title">LOOK CLOSER.</h2>
+    <div class="photo-subtitle">A PERSONAL PRACTICE IN LIGHT, COLOUR, AND COMPOSITION.</div>
+
+    <img src="assets/photo-large.png" alt="Landscape photography main" class="photo-img-large" />
+    <img src="assets/photo-top.png" alt="Scenic photography top" class="photo-img-top" />
+    <img src="assets/photo-bottom1.png" alt="Photography detail 1" class="photo-img-bottom1" />
+    <img src="assets/photo-bottom2.png" alt="Photography detail 2" class="photo-img-bottom2" />
+
+    <div class="photo-desc">
+      Photography gives me a different way to explore. While travelling or taking a break from sport, I stop to notice the way light changes a place, how colours work together, and which moments feel worth remembering.
+    </div>
+
+    <div class="bottom-divider"></div>
+
+    <div class="copyright">
+      © 2025 DYLAN &nbsp;/&nbsp; SPORT · OUTDOORS · PHOTOGRAPHY
+    </div>
+    <a href="#contact" class="contact-link">
+      CONTACT &nbsp;/&nbsp; GET IN TOUCH <span class="arrow">↗</span>
+    </a>
+  </div>
+
+  <!-- Single Page App Router Script -->
+  <script>
+    function switchPage(pageId, event) {
+      if (event) {
+        event.preventDefault();
+      }
+      
+      const pages = document.querySelectorAll('.page-container');
+      pages.forEach(page => {
+        if (page.id === pageId) {
+          page.classList.add('active');
+        } else {
+          page.classList.remove('active');
+        }
+      });
+
+      // Update URL hash without standard jumping
+      history.pushState(null, null, '#' + pageId);
+      window.scrollTo(0, 0);
+    }
+
+    // Support browser back/forward buttons
+    window.addEventListener('popstate', () => {
+      const hash = window.location.hash.replace('#', '') || 'home';
+      const target = document.getElementById(hash);
+      if (target) {
+        switchPage(hash);
+      }
+    });
+
+    // Handle initial load hash
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash && document.getElementById(hash)) {
+        switchPage(hash);
+      }
+    });
+  </script>
+</body>
+</html>
